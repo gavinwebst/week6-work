@@ -30,24 +30,36 @@ namespace logic_and_loops
             Console.WriteLine("\nYou chose: " + userChoice + "\n");
 
             //select path
-            if (userChoice == "left")
-            {
-                Console.WriteLine("You choose the large room good luck!!!!");
-            }
-            else if (userChoice == "right")
-            {
-                Console.WriteLine("You chose the long tunnel get walking at least its safe!");
-            }
-            else if (userChoice == "up")
-            {
-                Console.WriteLine("You can go up even I did not know that well let's just leave");
+            //if (userChoice == "left")
+            //{
+            //    Console.WriteLine("You choose the large room good luck!!!!");
+            //}
+            //else if (userChoice == "right")
+            //{
+            //    Console.WriteLine("You chose the long tunnel get walking at least its safe!");
+            //}
+            //else if (userChoice == "up")
+            //{
+            //    Console.WriteLine("You can go up even I did not know that well let's just leave");
+
+            //}
+            //else {
+
+            //    Console.WriteLine("I guess we can just stay here if you want. I have no problem with it");
+            //}
+            switch (userChoice) {
+                case "left":
+                    Console.WriteLine("You choose the large room good luck!!!!");
+                    break;
+                case "right":
+                    Console.WriteLine("You chose the long tunnel get walking at least its safe!");
+                    break;
+                case "up":
+                    Console.WriteLine("You can go up even I did not know that well let's just leave");
+                    break;
+     
 
             }
-            else {
-
-                Console.WriteLine("I guess we can just stay here if you want. I have no problem with it");
-            }
-
 
 
         }
