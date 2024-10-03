@@ -1,4 +1,6 @@
-﻿namespace logic_and_loops
+﻿using System.ComponentModel.Design;
+
+namespace logic_and_loops
 {
     internal class Program
     {
@@ -24,7 +26,28 @@
             Console.WriteLine("Type 'left' to choose the large room path or type 'right' to choose the long tunnel path");
 
             //grabbing user input
-            
+            userChoice = Console.ReadLine();
+            Console.WriteLine("\nYou chose: " + userChoice + "\n");
+
+            //select path
+            if (userChoice == "left")
+            {
+                Console.WriteLine("You choose the large room good luck!!!!");
+            }
+            else if (userChoice == "right")
+            {
+                Console.WriteLine("You chose the long tunnel get walking at least its safe!");
+            }
+            else if (userChoice == "up")
+            {
+                Console.WriteLine("You can go up even I did not know that well let's just leave");
+
+            }
+            else {
+
+                Console.WriteLine("I guess we can just stay here if you want. I have no problem with it");
+            }
+
 
 
         }
